@@ -33,9 +33,9 @@ Usage: Put the data_file.npy and data_file folders in the same directory, first 
 
 command:
 
-     Python visualEditor.py [data_file] g
+	Python visualEditor.py [data_file] g
 
-Python visualEditor.py [data_file] s
+	Python visualEditor.py [data_file] s
 
 0. The data is priceless, please make a backup first!
 
