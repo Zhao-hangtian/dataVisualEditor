@@ -20,4 +20,29 @@
 
 3.请先执行generate再执行sync。
 
+
+
+# dataVisualEditor
+
+Cross-platform data visualization editing tool based on file operation
+
+
+Author: zhao hangtian
+
+Usage: Put the data_file.npy and data_file folders in the same directory, first generate(s) and then sync(s).
+
+command:
+
+     Python visualEditor.py [data_file] g
+
+Python visualEditor.py [data_file] s
+
+0. The data is priceless, please make a backup first!
+
+1.generate: Read data_file.npy and generate a picture in the data_file folder. Delete the image under the folder as needed. Please do not change the image file name in this directory.
+
+2.sync: According to the remaining images in the folder data_file as the index, synchronized to data_file.npy.
+
+3. Please execute generate and then execute sync.
+
 Sample five.npy added. Try it for fun!
