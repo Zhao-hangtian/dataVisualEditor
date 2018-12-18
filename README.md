@@ -1,5 +1,6 @@
 # dataVisualEditor
 基于文件操作的跨平台数据可视化编辑工具
+
 作者：zhao hangtian
 用法：把data_file.npy和data_file文件夹放在同一目录下，先generate(s)再sync(s)。
 命令：
