@@ -39,9 +39,9 @@ command:
 
 0. The data is priceless, please make a backup first!
 
-1.generate: Read data_file.npy and generate a picture in the data_file folder. Delete the image under the folder as needed. Please do not change the image file name in this directory.
+1. generate: Read data_file.npy and generate a picture in the data_file folder. Delete the image under the folder as needed. Please do not change the image file name in this directory.
 
-2.sync: According to the remaining images in the folder data_file as the index, synchronized to data_file.npy.
+2. sync: According to the remaining images in the folder data_file as the index, synchronized to data_file.npy.
 
 3. Please execute generate and then execute sync.
 
