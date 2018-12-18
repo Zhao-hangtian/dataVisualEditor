@@ -20,6 +20,7 @@
 
 3.请先执行generate再执行sync。
 
+4.不要连续执行sync，第二次执行sync前应该再generate一次。
 
 
 # dataVisualEditor
@@ -44,5 +45,7 @@ command:
 2. sync: According to the remaining images in the folder data_file as the index, synchronized to data_file.npy.
 
 3. Please execute generate and then execute sync.
+
+4. Do not execute sync continuously. You should generate it again before executing the second sync.
 
 Sample five.npy added. Try it for fun!
