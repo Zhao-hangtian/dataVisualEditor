@@ -9,6 +9,7 @@
 1.generate：读取data_file.npy，在data_file文件夹生成图片。根据需要删除文件夹下的图片，请不要更改此目录下的图片文件名。
 2.sync：根据文件夹data_file中剩下图片作为index，同步到data_file.npy中。
 3.请先执行generate再执行sync。
+4.不要连续执行sync，第二次执行sync前应该再generate一次。
 """
 import numpy as np
 import cv2
@@ -16,17 +17,12 @@ import sys
 import os
 import shutil
 
-# print('参数个数为:', len(sys.argv), '个参数。')
-# print('参数列表:', str(sys.argv))  # vE.py filename(.npy) func
 if len(sys.argv) != 3:
     print("参数错误！请使用 filename.npy func")
     exit(0)
 para = sys.argv
-# foldName = 'jointsPics\\' + 'five'
+
 foldName = 'jointsPics\\' + para[1]
-
-
-# print('参数2:', para[1])
 
 
 def make_path(p):
@@ -37,11 +33,12 @@ def make_path(p):
         os.mkdir(p)
 
 
-
-# test
 def generate(foldname=foldName):
     load = np.load(foldname + '.npy')
     make_path(foldname)
+
+
+    ### Modify there to draw your data!
     canvas = np.zeros((300, 300, 3), dtype="uint8")
     maxnum = len(load)
     r = 6
@@ -80,6 +77,8 @@ def generate(foldname=foldName):
         print(savefile)
         cv2.imwrite(savefile, canvas)
     print("成功生成可视化图片\n")
+
+    ### if you want to see instantly.
         # cv2.imshow(str(j), canvas)
         # cv2.waitKey(0)
     # cv2.destroyAllWindows()
